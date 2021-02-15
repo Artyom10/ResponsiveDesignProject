@@ -2,6 +2,10 @@
 @import "fonts.scss";
 @import "variables.scss";
 
+* {
+    text-decoration: none;
+}
+
 body {
     font-family: "Loto", sans-serif;
     min-width: 320px;
@@ -12,7 +16,16 @@ body {
     padding: 0 20px;
 }
 
+//@media (min-width:750px) for medium
+//@media(min-width:1532px) for large
+//@media(min-width:320px) for small
+
 .header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
     background-image: url(../../img/blackback.png);
     &__inner {
         min-height: 195px;
@@ -32,6 +45,14 @@ body {
             flex: 0 1 auto;
             width: 55px;
             height: 55px;
+        }
+    }
+    @media(min-width:760px){
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
         }
     }
 }
