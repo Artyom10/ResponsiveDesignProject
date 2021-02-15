@@ -21,11 +21,6 @@ body {
 //@media(min-width:320px) for small
 
 .header {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
     background-image: url(../../img/blackback.png);
     &__inner {
         min-height: 195px;
@@ -56,3 +51,55 @@ body {
         }
     }
 }
+
+.introduction {
+    background-image: url(../../images/mobile_people_02.jpg);
+    &__information {
+        width: 100%;
+        height: 457px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .slogan {
+            &__up {
+                font-size: 43.9px;
+                line-height: 48px;
+                font-weight: 900;
+                color: #ffffff;
+            }
+            &__down {
+                font-size: 26.4px;
+                line-height: 1.2;
+                font-weight: 400;
+                color: #ffffff;
+                text-align: center;
+            }
+        }
+        .introduction__functionality {
+            .functionality {
+                background-color: transparent;
+                border: 1.5px solid #ffffff;
+                font-size: 26.4px;
+                height: 60px;
+                line-height: 1.2;
+                font-weight: 600;
+                color: #ffffff;
+                &:hover {
+                    background-color: #ffffff;
+                    opacity: 0.8;
+                    color: #037693;
+                }
+            }
+            .functionality-alone {
+                margin-right: 50px;
+                width: 215px;
+            }
+            .functionality-together {
+                width: 144px;
+            }
+        }
+  }
+}
+    
+
