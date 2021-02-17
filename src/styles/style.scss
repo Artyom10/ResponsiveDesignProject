@@ -10,12 +10,12 @@
 
 body {
     font-family: "Loto", sans-serif;
-    min-width: 320px;
     overflow-x: hidden;
 }
 
 .container {
     padding: 0 20px;
+    max-width: 2400px;
 }
 
 //@media (min-width:750px) for medium
@@ -38,6 +38,7 @@ body {
         .menu {
             @include setFlex(0,1,auto);
             @include setMenuButtonParams(55px,55px);
+            margin-right: 0 auto ;
         }
     }
     @media(min-width:760px){
@@ -50,7 +51,9 @@ body {
 .introduction {
     background-image: url(../../images/mobile_people_02.jpg);
     &__information {
-        @include setWidthAndHeightFixed(100%,457px);
+        min-height: 457px;
+        width: 100%;
+        //@include setWidthAndHeightFixed(100%,457px);
         @include setFlexHorizAndVertical(flex,center,center);
         flex-direction: column;
         .slogan {
@@ -68,8 +71,52 @@ body {
                 text-align: center;
             }
         }
-        .introduction__functionality {
-            .functionality {
+        .possability {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+
+            &__alone {
+                max-width: 180px;
+                min-height: 60px;
+                border: 1.5px solid #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &__together {
+                max-width: 287px;
+                min-height: 60px;
+                border: 1.5px solid #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &__text {
+                font-size: 26.4px;
+                line-height: 1.2;
+                font-weight: 500;
+                color: #ffffff;
+            }
+            &__alone:hover, &__together:hover {
+                background-color: white;
+                    .possability__text {
+                        font-size: 22px;
+                        line-height: 1.2;
+                        font-weight: 400;
+                        color: #037693;
+                    }
+            }
+            &__block-first {
+                width: 50%; 
+            }
+            
+        }
+       /* .introduction__functionality {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+           /* .functionality {
                 background-color: transparent;
                 border: 1.5px solid #ffffff;
                 font-size: 26.4px;
@@ -90,8 +137,47 @@ body {
             .functionality-together {
                 width: 144px;
             }
-        }
+            
+        }*/
+
   }
 }
+
+
+
+
+/*.flexim {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid green;
+}*/
+
+.work__header{
+    display: flex;
+    justify-content: center;
+    &-inside {
+        font-size: 47.1px;
+        line-height: 1.2;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        color: #037693;
+    }
     
+}
+
+.work__flex {
+    display: flex;
+    justify-content: space-around;
+    .flex__img {
+        display: inline-block;
+        padding: 18px;
+        border: 1px solid #037693;
+        background-color: cyan;
+    }
+    .flex__text {
+        width: 100%;
+    }
+}
+
 
