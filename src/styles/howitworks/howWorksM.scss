@@ -1,27 +1,15 @@
-/*
-.work__header{
-    display: flex;
-    justify-content: center;
-    &-inside {
-        font-size: 47.1px;
-        line-height: 1.2;
-        font-weight: 300;
-        letter-spacing: 0.1em;
-        color: #037693;
-    }
-    
-}
+@media (max-width: $mobileWidth) {
+    .work {
+        &__information {
+            display: flex;
+            justify-content: space-around;
+            .general__works {
+                min-width: 50%;
+            }
+            .parametr__text {
+                //margin-bottom: 1.5rem;
 
-.work__flex {
-    display: flex;
-    justify-content: space-around;
-    .flex__img {
-        
-        padding: 18px;
-        border: 1px solid #037693;
-        background-color: cyan;
+            }
+        }
     }
-    .flex__text {
-        width: 100%;
-    }
-}*/
+}
