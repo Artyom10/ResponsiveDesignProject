@@ -31,8 +31,7 @@ module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {
-      main: ['@babel/polyfill','./index.js'],
-      analytics: './analytics.js'
+      main: ['@babel/polyfill','./index.js']
     },
     output: {
         filename: '[name].[hash].js',

@@ -1,0 +1,26 @@
+@import "~normalize.css";
+@import "./fonts/fonts.scss";
+@import "./variables/variables.scss";
+@import "./mixins/mixins.scss";
+
+@import "./header/index.scss";
+@import "./introduction/index.scss";
+
+* {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Loto", sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 0 20px;
+    max-width: 2400px;
+}
+
+//@media (min-width:750px) for medium
+//@media(min-width:1532px) for large
+//@media(min-width:320px) for small
+

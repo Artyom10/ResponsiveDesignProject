@@ -1,0 +1,27 @@
+
+.work__header{
+    display: flex;
+    justify-content: center;
+    &-inside {
+        font-size: 47.1px;
+        line-height: 1.2;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        color: #037693;
+    }
+    
+}
+
+.work__flex {
+    display: flex;
+    justify-content: space-around;
+    .flex__img {
+        
+        padding: 18px;
+        border: 1px solid #037693;
+        background-color: cyan;
+    }
+    .flex__text {
+        width: 100%;
+    }
+}

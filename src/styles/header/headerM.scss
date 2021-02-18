@@ -1,0 +1,25 @@
+.header {
+    background-image: url(../../img/blackback.png);
+    &__inner {
+        min-height: 195px;
+        @include setFlexHorizAndVertical(flex,space-between,center);
+        .invisible__elem {
+            @include setFlex(0,1,auto);
+            @include setWidthAndHeightFixed(100px,100px);
+            visibility: hidden;
+        }
+        .logo {
+            @include setFlex(0,1,auto);
+        }
+        .menu {
+            @include setFlex(0,1,auto);
+            @include setMenuButtonParams(55px,55px);
+            margin-right: 0 auto ;
+        }
+    }
+    @media(min-width:760px){
+        &__inner {
+            @include setFlexHorizAndVertical(flex,space-between,center);
+        }
+    }
+}
