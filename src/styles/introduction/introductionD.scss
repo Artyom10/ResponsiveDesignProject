@@ -1,9 +1,19 @@
 /*.introduction {
-    background-image: url(../../images/mobile_people_02.jpg);
+    background:
+    linear-gradient(
+    rgba(24, 31, 99, 0.7),
+    rgba(17, 50, 80, 0.7)
+    ),
+    url(../../img/peopleInside.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    &__phone {
+        display: flex;
+        justify-content: flex-end;
+    }
     &__information {
         min-height: 457px;
         width: 100%;
-        //@include setWidthAndHeightFixed(100%,457px);
         @include setFlexHorizAndVertical(flex,center,center);
         flex-direction: column;
         .slogan {
@@ -62,11 +72,11 @@
             }
             
         }
-       /* .introduction__functionality {
+        .introduction__functionality {
               width: 100%;
               display: flex;
               justify-content: space-between;
-           /* .functionality {
+            .functionality {
                 background-color: transparent;
                 border: 1.5px solid #ffffff;
                 font-size: 26.4px;
@@ -92,3 +102,21 @@
 
   }
 }*/
+
+.introduction {
+    background:
+    linear-gradient(
+    rgba(24, 31, 99, 0.7),
+    rgba(17, 50, 80, 0.7)
+    ),
+    url(../../img/peopleInside.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    .phone__img {
+        font-size: 4rem;
+        margin-left: 4rem;
+        padding-bottom: 2px;
+        max-height: 63vh;
+        }
+}

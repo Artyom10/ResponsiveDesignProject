@@ -1,0 +1,26 @@
+@media (min-width: $tabletWidthMin) and (max-width: $tabletWidthMax) {
+    .header {
+        &__inner {
+            min-height: 100px;
+            display: flex;
+            justify-content: center;
+            .logo {
+                display: none;
+            }
+            .invisible__elem {
+                display: flex;
+                visibility: none;
+                width: 2rem;
+            }
+            .menu {
+                &__desktop {
+                    padding-right: 2rem;
+               }
+                &__link {
+                   font-size: 1rem;
+               }
+            }
+
+        }
+    }
+}

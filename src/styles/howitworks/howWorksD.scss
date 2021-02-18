@@ -1,0 +1,71 @@
+.work {
+    padding: 5rem;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__information {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-around;
+        margin-top: 2rem;
+        .paramentr {
+            &-first {
+                @include setWidthAndHeightFixed(70%,60%);
+                background: url(../../img/create.png) no-repeat center;
+            }
+            &-second {
+                @include setWidthAndHeightFixed(70%,60%);
+                background: url(../../img/discuss-issue.png) no-repeat center;
+            }
+            &-third {
+                @include setWidthAndHeightFixed(70%,60%);
+                background: url(../../img/share.png) no-repeat center;
+            }
+            &-fourth {
+                @include setWidthAndHeightFixed(70%,60%);
+                background: url(../../img/favorites-button.png) no-repeat center;
+               
+            }
+        }
+        
+        .parametr__text {
+                text-align: center;
+                //padding: .1rem;
+                margin-top: 1.5rem;
+                color: $accent;
+                font-weight: bold ;
+                transition: .2;
+        }
+        .general__works {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 18%;
+        }
+        .parametr__container {
+            width: 5rem;
+            height: 5rem;
+            display: flex;
+            border: 1px solid #037693;
+            border-radius: 0;
+            transition: 200ms;
+        }
+        .initial {
+            margin: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+    &__header-text {
+        font-size: 47.1px;
+        line-height: 1.2;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        color: #037693;
+    }
+}
