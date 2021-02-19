@@ -7,6 +7,7 @@
     url(../../img/peopleInside.png) no-repeat center center fixed;
     background-size: cover;
     display: flex;
+    justify-content: center;
     height: 100vh;
     /*&__phone {
         display: flex;
@@ -24,52 +25,75 @@
         max-height: 63vh;
     }
     &__information {
-        height: 50%;
+        /*height: 50%;
         width: 50%;
         padding: 15rem;
-       // margin-right: 55rem;
-        @include setFlexHorizAndVertical(flex,space-between,flex-end);
+        margin-right: 55rem;
+        @include setFlexHorizAndVertical(flex,center,center);
+        flex-direction: column;*/
+        display: flex;
         flex-direction: column;
+        padding-top: 15rem;
+        padding-right: 25rem;
+       // justify-content: flex-end;
+        //align-items: center;
+        //justify-content: center;
+        //justify-content: flex-start;
         .slogan {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            justify-content: center;
             &__up {
                 font-size: 2.5rem;
-                //line-height: 2rem;
                 font-weight: 900;
                 color: #ffffff;
             }
             &__down {
+                margin-top: 0;
                 font-size: 2rem;
-                line-height: 1.2;
                 font-weight: 400;
                 color: #ffffff;
                 text-align: center;
             }
         }
         .introduction__functionality {
-              width: 100%;
               display: flex;
-             // justify-content: center;
+              flex-grow: 1;
+              align-items: center;
+              justify-content: center;
             .functionality {
                 background-color: transparent;
                 border: 1.5px solid #ffffff;
-                //font-size: 26.4px;
                 font-size: 1.1rem;
-                height: 3.5rem;
+                height: 2.5rem;
                 line-height: 1.2;
-                font-weight: 600;
+                font-weight: 500;
                 color: #ffffff;
-                &:hover {
-                    background-color: #ffffff;
-                    opacity: 0.8;
+                &:hover{
+                    //background-color: #ffffff;
+                    background-color: #e8e9ea;
+                    //opacity: 0.8;
                     color: #037693;
                 }
             }
             .functionality-alone {
                 margin-right: 3rem;
-                width: 15rem;
+                width: 10rem;
+
             }
             .functionality-together {
-                width: 15rem;
+                width: 8rem;
+            }
+            .functionality__input {
+                width: 8rem;
+                height: 2.2rem;
+                background-color: #e8e9ea;
+                color: #037693;
+                appearance: none;
+                &:focus {
+                    outline: none;
+                }
             }
             
         }

@@ -1,0 +1,14 @@
+@media (max-width: $mobileWidth) {
+    .features {
+        padding: 2rem 0;
+        &__options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__option {
+            width: auto;
+            max-width: 14rem;
+            padding-inline-end: 2rem;
+        }
+    }
+}

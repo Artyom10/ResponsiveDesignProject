@@ -1,0 +1,37 @@
+@media (min-width: $tabletWidthMin) and (max-width: $tabletWidthMax) {
+    .features {
+        &__options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__option {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            padding: 3rem 3rem;
+            width: 20rem;
+            &::after {
+                
+            }
+            &:nth-child(2n)::after {
+                display: none;
+            }
+            &:nth-child(3n)::after {
+                display: none;
+            }
+        }
+        .option__img {
+            height: 4rem;
+        }
+        .option__text {
+            font-size: 2rem;
+            &::after {
+                width: 290px;
+                right: 62px;
+            }
+            &:nth-child(3n)::after {
+                display: none;
+            }
+        }
+    }
+}
