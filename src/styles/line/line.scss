@@ -1,0 +1,25 @@
+.line__elem {
+    display: flex;
+    width: 6rem;
+    height: 3px;
+    align-items: flex-start;
+    color: #037693;
+    &-long {
+        @include setWidthAndHeightFixed(60%,100%);
+    }
+    &-medium {
+        @include setWidthAndHeightFixed(25%,100%);
+    }
+    &-small {
+        @include setWidthAndHeightFixed(10%,100%);
+    }
+    &-inverted {
+       
+    }
+}
+
+@media (max-width: $tabletWidthMin){
+    .line__elem {
+
+    }
+}

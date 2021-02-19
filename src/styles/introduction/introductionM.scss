@@ -1,3 +1,14 @@
+@media (max-width: $mobileWidth) {
+    .introduction {
+        &__phone {
+            display: none;
+        }
+        &__phone-img {
+            display: none;
+        }
+    }
+}
+
 /*.introduction {
     background-image: url(../../images/mobile_people_02.jpg);
     &__information {

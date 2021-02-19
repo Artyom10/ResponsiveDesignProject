@@ -1,4 +1,4 @@
-/*.introduction {
+.introduction {
     background:
     linear-gradient(
     rgba(24, 31, 99, 0.7),
@@ -6,81 +6,55 @@
     ),
     url(../../img/peopleInside.png) no-repeat center center fixed;
     background-size: cover;
+    display: flex;
     height: 100vh;
-    &__phone {
+    /*&__phone {
         display: flex;
         justify-content: flex-end;
+    }*/
+    &__phone {
+        position: absolute;
+        top: 22.5rem;
+        left: 63rem;
+    }
+    &__phone-img {
+        font-size: 4rem;
+        margin-left: 4rem;
+        padding-bottom: 2px;
+        max-height: 63vh;
     }
     &__information {
-        min-height: 457px;
-        width: 100%;
-        @include setFlexHorizAndVertical(flex,center,center);
+        height: 50%;
+        width: 50%;
+        padding: 15rem;
+       // margin-right: 55rem;
+        @include setFlexHorizAndVertical(flex,space-between,flex-end);
         flex-direction: column;
         .slogan {
             &__up {
-                font-size: 43.9px;
-                line-height: 48px;
+                font-size: 2.5rem;
+                //line-height: 2rem;
                 font-weight: 900;
                 color: #ffffff;
             }
             &__down {
-                font-size: 26.4px;
+                font-size: 2rem;
                 line-height: 1.2;
                 font-weight: 400;
                 color: #ffffff;
                 text-align: center;
             }
         }
-        .possability {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-
-            &__alone {
-                max-width: 180px;
-                min-height: 60px;
-                border: 1.5px solid #ffffff;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            &__together {
-                max-width: 287px;
-                min-height: 60px;
-                border: 1.5px solid #ffffff;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            &__text {
-                font-size: 26.4px;
-                line-height: 1.2;
-                font-weight: 500;
-                color: #ffffff;
-            }
-            &__alone:hover, &__together:hover {
-                background-color: white;
-                    .possability__text {
-                        font-size: 22px;
-                        line-height: 1.2;
-                        font-weight: 400;
-                        color: #037693;
-                    }
-            }
-            &__block-first {
-                width: 50%; 
-            }
-            
-        }
         .introduction__functionality {
               width: 100%;
               display: flex;
-              justify-content: space-between;
+             // justify-content: center;
             .functionality {
                 background-color: transparent;
                 border: 1.5px solid #ffffff;
-                font-size: 26.4px;
-                height: 60px;
+                //font-size: 26.4px;
+                font-size: 1.1rem;
+                height: 3.5rem;
                 line-height: 1.2;
                 font-weight: 600;
                 color: #ffffff;
@@ -91,18 +65,18 @@
                 }
             }
             .functionality-alone {
-                margin-right: 50px;
-                width: 215px;
+                margin-right: 3rem;
+                width: 15rem;
             }
             .functionality-together {
-                width: 144px;
+                width: 15rem;
             }
             
         }
 
   }
-}*/
-
+}
+/*
 .introduction {
     background:
     linear-gradient(
@@ -111,12 +85,26 @@
     ),
     url(../../img/peopleInside.png) no-repeat center center fixed;
     background-size: cover;
-    height: 100vh;
     display: flex;
-    .phone__img {
-        font-size: 4rem;
-        margin-left: 4rem;
-        padding-bottom: 2px;
-        max-height: 63vh;
-        }
-}
+    justify-content: space-around;
+    &__inner {
+        @include setWidthAndHeightFixed(70%,100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .information__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .introduction__buttons {
+        
+    }
+}*/

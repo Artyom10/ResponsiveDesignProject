@@ -2,13 +2,15 @@
     .work {
         &__information {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             .general__works {
                 min-width: 50%;
             }
             .parametr__text {
                 //margin-bottom: 1.5rem;
-
+            }
+            .parametr__container {
+                
             }
         }
     }

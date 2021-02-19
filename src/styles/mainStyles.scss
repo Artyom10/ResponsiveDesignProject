@@ -3,9 +3,13 @@
 @import "./variables/variables.scss";
 @import "./mixins/mixins.scss";
 
+
+@import "./line/line.scss";
+
 @import "./header/index.scss";
 @import "./introduction/index.scss";
 @import "./howitworks/index.scss";
+@import "./interaction/index.scss";
 
 * {
     text-decoration: none;
