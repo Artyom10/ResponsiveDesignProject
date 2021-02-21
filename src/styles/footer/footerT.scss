@@ -1,0 +1,48 @@
+@media (min-width: $tabletWidthMin) and (max-width: $tabletWidthMax) {
+    .footer {
+        &__information {
+            display: flex;
+            justify-content: space-around;
+            align-items: baseline;
+            margin: 3rem;
+        }
+        .main__information {
+            width: 40rem;
+            .logo__text {
+                font-size: 0.7rem;
+            }
+        }
+        .links__wrapper {
+            .links__information {
+                width: 10rem;
+            }
+            .links__title {
+                font-size: .7rem;
+            }
+            .links__text {
+                .link__item {
+                    font-size: .7rem;
+                }
+            }
+        }
+        .social__information {
+            width: 12rem;
+            .social__images {
+                padding-left: 1.3rem;
+            }
+            .social__title {
+                font-size: .7rem;
+            }
+            .social__text {
+                font-size: .7rem;
+            }
+            .social__images {
+                .social__image-image {
+                    width: 1rem;
+                    height: 1rem;
+                    padding-right: 1.5rem;
+                }
+            }
+        }
+    }
+}
