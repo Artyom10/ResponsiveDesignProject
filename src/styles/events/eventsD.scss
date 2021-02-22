@@ -1,6 +1,8 @@
 .events {
     background-color: #e8e8e8;
     max-width: 100%;
+    padding: 5rem;
+    padding-top: 0;
     &__title {
         display: flex;
         justify-content: center;
@@ -10,14 +12,18 @@
         letter-spacing: 0.1em;
         color: #037693;
     }
+    &__collection-mobile {
+        display: none;
+    }
     &__collection {
-        margin: 0 14.5%;
+        //margin: 0 14.5%;
+        margin: 0;
         display: flex;
         justify-content: center;
         .event__card {
             padding: 0;
             background-color: #fff;
-            max-width: 24rem;
+            max-width: 20rem;
             transition-duration: 500ms;
             box-shadow: 0 0.1rem 0.5rem #b2b2b2;;
             &:hover {
@@ -30,7 +36,7 @@
                 text-transform: uppercase;
                 text-align: center;
                 font-weight: 300;
-                height: 150px;
+                height: 10rem;
             }
             &-subtitle {
                 font-weight: 800;
@@ -46,34 +52,34 @@
                 }
             }
             &-speaker {
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
                 background-image: linear-gradient(
                     rgba(101, 172, 163, 0.8),
                     rgba(101, 172, 163, 0.8)
                 ),
                 url(../../img/events/speaker.png);
+            }
+            &-eye {
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
-            }
-            &-eye {
                 background-image: linear-gradient(
                     rgba(224, 122, 107, 0.8),
                     rgba(224, 122, 107, 0.8)
                 ),
                 url(../../img/events/eye.png);
+            }
+            &-class {
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
-            }
-            &-class {
                 background-image: linear-gradient(
                     rgba(242, 180, 124, 0.8),
                     rgba(242, 180, 124, 0.8)
                 ),
                 url(../../img/events/class.png);
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
             }
             .event-information {
                 display: flex;
@@ -89,30 +95,44 @@
                     width: 15rem;
                 }
             }
-            .event-button {
-                position: relative;
-                left: 50%;
-                transform: translate(-50%, 0);
-                height: 30px;
-                width: 115px;
-                color: #fff;
-                display: inline-block;
-                align-items: center;
-                text-align: center;
-                margin-bottom: 35px;
-                border-radius: 21px;
-                padding: 0 auto;
-                cursor: pointer;
-                &-first {
-                    background: #4ca59a;
+
+            &-line {
+                margin-top: 2px;
+                height: 2px;
+                &-left { 
+                    background-image: url(../../img/events/greenLine.png);
                 }
-                &-second {
-                    background: #f26250;
+                &-center {
+                    background-image: url(../../img/events/redLine.png);
                 }
-                &-third {
-                    background: #f0a765;
+                &-right {
+                    background-image: url(../../img/events/brownLine.png);
                 }
+                
+                
             }
+        }
+    }
+    .event-button {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: #fff;
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 35px;
+        border-radius: 21px;
+        padding: .5rem 1.3rem;
+        cursor: pointer;
+        &-first {
+            background: #4ca59a;
+        }
+        &-second {
+            background: #f26250;
+        }
+        &-third {
+            background: #f0a765;
         }
     }
 }

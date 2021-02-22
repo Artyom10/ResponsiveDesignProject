@@ -1,0 +1,93 @@
+@media (max-width: $mobileWidth) {
+    .events {
+        padding: 0;
+        &__title {
+            display: none;
+        }
+        &__collection {
+            display: none;
+        }
+        &__collection-mobile {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .event__card-mobile {
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                margin-bottom: .2rem;
+                &-speaker {
+                    order: 3;
+                    background-image: linear-gradient(
+                    rgba(101, 172, 163, 0.8),
+                    rgba(101, 172, 163, 0.8)
+                    ),
+                    url(../../img/events/speaker.png);
+                }
+                &-eye {
+                    order: 1;
+                    background-image: linear-gradient(
+                    rgba(224, 122, 107, 0.8),
+                    rgba(224, 122, 107, 0.8)
+                    ),
+                    url(../../img/events/eye.png);
+                }
+                &-class {
+                    order: 2;
+                    background-image: linear-gradient(
+                    rgba(242, 180, 124, 0.8),
+                    rgba(242, 180, 124, 0.8)
+                    ),
+                    url(../../img/events/class.png);
+                }
+                .card__title-mobile {
+                    text-align: center;
+                    font-size: 36px;
+                    font-weight: 300;
+                    color: #ffffff;
+                    text-transform: uppercase;
+                    .card__subtitle-mobile {
+                        font-weight: 800;
+                    }
+                }
+                .card__wrapper-mobile {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 1rem;
+                    margin-top: 2rem;
+                    .card__activity-mobile {
+                        &--img {
+                            width: 37px;
+                            height: 61px;
+                        }
+                    }
+                    .card__information {
+                        margin-left: .7rem;
+                        .card__text {
+                            font-size: 14px;
+                            line-height: 22px;
+                            font-weight: 300;
+                            letter-spacing: 0.02em;
+                            color: #ffffff;
+                        }
+                    }
+                }
+                .event-button {
+                    background: #fff;
+                    &--external {
+                        color: #499086;
+                    }
+                    &--interactive {
+                        color: #d9665c;
+                    }
+                    &--internal {
+                        color: #cd8f56;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

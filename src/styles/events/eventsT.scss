@@ -1,0 +1,27 @@
+@media (min-width: $tabletWidthMin) and (max-width: $tabletWidthMax) {
+    .events {
+        max-width: 100%;
+        &__collection {
+            //width: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .event__card {
+                margin: 1rem;
+                max-width: 14rem;
+                max-height: 24rem;
+                &-title {
+                    height: 8rem;
+                    font-size: 2rem;
+                }
+                .event-information {
+                    .event-text {
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
