@@ -93,15 +93,13 @@
                 position: relative;
                 left: 50%;
                 transform: translate(-50%, 0);
-                height: 30px;
-                width: 115px;
                 color: #fff;
                 display: inline-block;
                 align-items: center;
                 text-align: center;
                 margin-bottom: 35px;
                 border-radius: 21px;
-                padding: 0 auto;
+                padding: .5rem 1.3rem;
                 cursor: pointer;
                 &-first {
                     background: #4ca59a;
@@ -112,6 +110,21 @@
                 &-third {
                     background: #f0a765;
                 }
+            }
+            &-line {
+                margin-top: 2px;
+                height: 2px;
+                &-left { 
+                    background-image: url(../../img/events/greenLine.png);
+                }
+                &-center {
+                    background-image: url(../../img/events/redLine.png);
+                }
+                &-right {
+                    background-image: url(../../img/events/brownLine.png);
+                }
+                
+                
             }
         }
     }
