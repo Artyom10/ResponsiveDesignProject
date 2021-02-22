@@ -1,22 +1,38 @@
 .footer {
     background-color: black;
     &__information {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        //display: flex;
+        //justify-content: space-around;
+        //align-items: center;
+        @include setFlexHorizAndVertical(flex,space-around,center);
         padding-top: 3.3rem;
     }
+    &-text {
+        color: #fff;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        font-weight: 300;
+        letter-spacing: 0.01em;
+    }
+    &-title {
+        color: #fff;
+        font-size: 1rem;
+        line-height: 1.2;
+        font-weight: 400;
+    }
     .main__information {
-        display: flex;
+        @include setFlexHorizAndVertical(flex,center,center);
+        //display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        //justify-content: center;
+        //align-items: center;
         height: 60%;
         width: 16%;
         .logo__container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            //display: flex;
+            //justify-content: center;
+            //align-items: center;
+            @include setFlexHorizAndVertical(flex,center,center);
             width: 5rem;
          }
          .logo__img {
@@ -24,11 +40,7 @@
              height: 100%;
          }
          .logo__text {
-             color: #fff;
-             font-size: .8rem;
-             line-height: .9rem;
              text-align: center;
-             letter-spacing: 0.01em;
              margin-top: 2rem;
          }
     }
@@ -47,20 +59,13 @@
        &-account {
        }
         .links__title {
-            color: #fff;
-            font-size: .9rem;
-            line-height: 1.2;
-            font-weight: 400;
-            text-align: left;
+           
         }
         .links__text {
             display: flex;
             flex-direction: column;
             .link__item {
                 color: #fff;
-                line-height: 1.2;
-                font-weight: 300;
-                font-size: .8rem;
                 text-align: left;
             }
         }
@@ -73,11 +78,7 @@
         color: #fff;
         width: 14rem;
         .social__title {
-            display: flex;
-            justify-content: center;
-            font-size: .9rem;
-            line-height: 1.2;
-            font-weight: 300;
+
         }
         .social__images {
             display: flex;
@@ -85,21 +86,19 @@
             justify-content: center;
             align-items: center;
             padding-left: 1.9rem;
-            .social__image-image {
+            &-image {
                 width: 1.3rem;
                 height: 1.3rem;
                 padding-right: 2rem;
             }
         }
         .social__text {
-            font-size: 1rem;
-            line-height: 1.2;
-            font-weight: 300;
-            color: #ede3d3;
+
         }
         .social__form {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
             .social__email {
                 &-img {
                     width: 1.2rem;
@@ -113,8 +112,8 @@
                     border: none;
                     display: flex;
                     justify-content: center;
-                    align-items: center;
                     color: #fff;
+                    text-align: center;
                 }
             }
         }
@@ -132,9 +131,5 @@
         justify-content: center;
         align-items: center;
         color: #fff;
-        p {
-            font-size: .9rem;
-            line-height: 1.2;
-        }
     }
 }

@@ -1,6 +1,82 @@
 @media (min-width: $tabletWidthMin) and (max-width: $tabletWidthMax) {
     .footer {
+        &-title {
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 1.2;
+            color: #fff;
+        }
+        &-text {
+            font-size: 24px;
+            line-height: 1.2;
+        }
         &__information {
+            display: flex;
+            flex-direction: column;
+            .main__information {
+                width: 80%;
+                .logo__container {
+                    width: 121px;
+                    height: 140px;
+                    .logo {
+
+                    }
+                }
+                .logo__text {
+                    font-size: 38px;
+                    line-height: 48px;
+                    letter-spacing: 0.02em;
+                }
+            }
+            .links__wrapper {
+                display: flex;
+                justify-content: space-between;
+            }
+            .social__information {
+                margin-top: 10rem;
+                width: 100%;
+                .social__images {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 50%;
+                    margin-bottom: 2rem;
+                    &-image {
+                        width: 2.5rem;
+                        height: 2.5rem;
+                    }
+                }
+                .social__line {
+                    width: 60%;
+                }
+                .social__form {
+                    width: 60%;
+                    display: flex;
+                    justify-content: space-between;
+                    .social__input {
+                        &-inside {
+                            font-size: 1.7rem;
+                        }
+                    }
+                    .social__email {
+                        &-img {
+                            width: 2.2rem;
+                            height: 1.6rem;
+                        }
+                    }
+                    .invisible__item {
+                        width: 2.2rem;
+                        height: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+ /* &__information {
             display: flex;
             justify-content: space-around;
             align-items: baseline;
@@ -44,5 +120,4 @@
                 }
             }
         }
-    }
-}
+    }*/
